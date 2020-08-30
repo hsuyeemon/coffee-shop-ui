@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SLP Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="showCart()">
+	<header>
+
+      <!-- Navigation Section/Header -->
+
+            <!-- <h1 class="logo"></h1> -->
+            <div class="logo">
+                <img src="images/logo.png" alt="A+ Coffee Shop logo">
+            </div>
+	        <nav>
+	            <ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="menu.html">Menu</a></li>
+	                <li><a href="cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+	                	<span id="cart-total">0</span></li>
+
+	            </ul>
+	        </nav>
+
+
+    </header>
+
+    <section>
+		<h2 class="title">Your Cart</h2>
+		<div id="item-list"></div>
+    </section>
+
+    <footer>
+        <img src="images/footer-image.png" alt="A+ Coffee Shop logo">
+        <span>Powered by SLP</span>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+.logo{
+    height: auto;
+}
+
+
+body{
+	font-family: arial;
+}
+
+/* Heading */
+header{
+	background-color:white;
+	position: relative;
+}
+
+nav
+{
+    position: absolute;
+    top : 100px;
+    right: 64px;
+    line-height: 3em;
+}
+
+nav ul {
+   display:flex;
+   list-style-type:none;
+   justify-content:flex-end;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+nav ul li a,
+.fa-cart-plus{
+    text-transform: uppercase;
+    text-decoration:none;
+    font-weight:bold;
+	color:#810000;
+	padding: 12px;
+    font-size: 24px;
+}
+
+nav ul li a:hover,
+.fa-cart-plus:hover {
+	color:#000;
+}
+
+
+/* Hero image */
+#hero-image {
+	position: relative;
+	height: 600px;
+  width: 100%;
+}
+
+
+#hero-section{
+	position: absolute;
+	top: 500px;
+	left: 128px;
+}
+
+#hero-section h2{
+	color: #FFF;
+	font-size: 64px;
+}
+#hero-section img{
+	opacity: 0.2;
+}
+
+.btn{
+	display: inline-block;
+	text-decoration: none;
+	background-color: #FFF;
+	font-weight: bold;
+	border: 2px solid  #810000;
+	border-radius: 12px;
+	color: #810000;
+}
+
+#view-menu{
+	padding: 14px;
+
+	font-size: 16px;
+}
+
+#view-menu:hover,
+.addtocart:hover{
+	transform: scale(1.1);
+}
+
+/* Menu Section */
+
+.menu{
+	margin: 64px;
+}
+.title{
+	margin: 32px;
+	text-align: center;
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+ 
+  width: 32.3%;
+  padding: 5px;
+  margin-top : 32px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Clear floats after image containers */
+/*
+.column {
+  float: left;
+  width: 32.3%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column img{
+	width: 300px;
+	height: 300px;
+}
+
+.column span{
+	padding: 14px;
+}
+*/
+.column img{
+	width: 300px;
+	height: 300px;
+}
+
+.column span{
+	padding: 14px;
+}
+
+footer{
+	background-color: #810000;
+	text-align: center;
+	padding: 14px;
+	color: #fff;
+}
+footer img{
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin: 0 auto
+}
+
+
+
+/* Menu Page */
+
+.tab-bar{
+	list-style: none;
+	margin: 0;
+	padding: 10px 10px 0 10px;
+	background: #810000;
+	overflow: hidden;
+}
+.tab-bar li{
+	padding: 8px 20px;
+	float: left;
+	margin-right: 8px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.panel{
+	min-height: 200px;
+	border: 1px solid #c22;
+	border-top: 0 none;
+	padding: 15px;
+}
+
+#tab-2{
+	background-color: #e55;
+}
+
+#panel-2{
+	display: none;
+}
+
+
+.addtocart{
+	padding: 10px;
+	font-size: 12px;
+
+}
+
+#menu-section{
+	margin: 64px;
+}
