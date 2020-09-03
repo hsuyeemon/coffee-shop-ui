@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>SLP Coffee Shop</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<title>Coffee Shop</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
+
 	<header>
-
-      <!-- Navigation Section/Header -->
-
-            <!-- <h1 class="logo"></h1> -->
-            <div class="logo">
-                <img src="images/logo.png" alt="A+ Coffee Shop logo">
-            </div>
-	        <nav>
-	            <ul>
-	                <li><a href="index.html">Home</a></li>
-	                <li><a href="menu.html">Menu</a></li>
-	                <li><a href="cart.html"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-	                	<span id="cart-total">0</span></li>
-
-	            </ul>
-	        </nav>
-
-
-    </header>
-
-    <section>
-		<div id="menu-section">
-			<ul class="tab-bar">
-				<li id="tab-1" onclick="switchOne()">Coffee</li>
-				<li id="tab-2" onclick="switchTwo()">Bakery</li>
+		<img id="logo" src="images/logo.png" alt="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</li>
+				<li><a>
+					<i class="fa fa-cart-plus" aria-hidden="true"></i>
+				</a></li>
 			</ul>
-			<div class="panel" id="panel-1">
-			<div class="row">
-		  
-			  <div class="column">
-			    <img src="images/bitem3.jpg" alt="dalgona" style="width:100%">
-			    <h3>Title</h3>
-			    <p>5000MMK</p>
-			    <a class="btn addtocart" href="menu.html">Add to cart</a>
-			  </div>
-		</div>
-	</div>
-		</div>
-    </section>
+		</nav>
+		
+	</header>
 
-    <footer>
-        <img src="images/footer-image.png" alt="A+ Coffee Shop logo">
-        <span>Powered by SLP</span>
-    </footer>
-    <script type="text/javascript" src="app.js"></script>
+	<section>
+		<div id="menu-section">
+			<!-- tab bar -->
+			<ul class="tab-bar">
+				<li id="tab-1" onclick="swichPanel1()">Coffee</li>
+				<li id="tab-2" onclick="swichPanel2()">Bakery</li>
+			</ul>
+		</div>
+		<div class="panel" id="panel-1">
+			<div id="coffee-menu">
+			<!--div class="item" id="citem1">
+				<img src="images/item1.jpeg" alt="item1">
+				<h3>Name</h3>
+				<p>2500MMK</p>
+				<a class="btn" id="add-to-cart" href="#"
+				onclick="addToCart('citem1')">Add to Cart</a>
+			</div-->
+			
+		
+		</div>
+		</div>
+		<div class="panel" id="panel-2">
+			<div id="bakery-menu">
+			<!--div class="item">
+				<img src="images/item1.jpeg" alt="item1">
+				<h3>Name</h3>
+				<p>2500MMK</p>
+				<a class="btn" id="add-to-cart" href="#">Add to Cart</a>
+			</div-->
+			
+		</div>
+		</div>
+	</section>
+
+	<footer>
+		<img src="images/footer-image.png" alt="footer">
+		<p>Copyright 2020 @ slp javascript</p>
+	</footer>
+
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
